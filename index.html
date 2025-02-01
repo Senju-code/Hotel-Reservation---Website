@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefox Inspired Hotel Reservation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Firefox Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firefox-section">
+            <h2>Welcome to Firefox Hotel</h2>
+            <p>Experience warmth and comfort during your stay in our beautifully designed hotel.</p>
+        </section>
+
+        <section id="reservations" class="firefox-section">
+            <h2>Make a Reservation</h2>
+            <form id="reservationForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="family">Family</option>
+                    <option value="suite">Suite</option>
+                </select>
+
+                <button type="submit">Book Now</button>
+            </form>
+            <div id="confirmationMessage" class="hidden"></div>
+        </section>
+
+        <section id="about" class="firefox-section">
+            <h2>About Us</h2>
+            <p>Discover the history and values of Firefox Hotel, where hospitality meets excellence.</p>
+        </section>
+
+        <section id="contact" class="firefox-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            <p>Email: contact@firefoxhotel.com</p>
+            <p>Phone: 09 5024 16545</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Firefox Hotel. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
